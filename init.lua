@@ -1,6 +1,9 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+vim.pack.add({ "https://github.com/sphamba/smear-cursor.nvim" })
+require("smear_cursor").setup({})
+
 local opt = vim.opt
 opt.number = true
 opt.relativenumber = true
