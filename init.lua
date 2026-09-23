@@ -1,8 +1,14 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-vim.pack.add({ "https://github.com/sphamba/smear-cursor.nvim" })
+vim.pack.add({
+  "https://github.com/sphamba/smear-cursor.nvim",
+  "https://github.com/morhetz/gruvbox",
+})
 require("smear_cursor").setup({})
+
+vim.opt.background = "dark"
+vim.cmd.colorscheme("gruvbox")
 
 local opt = vim.opt
 opt.number = true
